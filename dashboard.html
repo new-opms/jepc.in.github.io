@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Dashboard - JEPC</title>
+
+	<!-- Main Styles -->
+	<link rel="stylesheet" href="assets/styles/style.min.css">
+
+	<!-- mCustomScrollbar -->
+	<link rel="stylesheet" href="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+	<!-- Waves Effect -->
+	<link rel="stylesheet" href="assets/plugin/waves/waves.min.css">
+
+	<!-- Sweet Alert -->
+	<link rel="stylesheet" href="assets/plugin/sweet-alert/sweetalert.css">
+	
+	<!-- Percent Circle -->
+	<link rel="stylesheet" href="assets/plugin/percircle/css/percircle.css">
+
+	<!-- Chartist Chart -->
+	<link rel="stylesheet" href="assets/plugin/chart/chartist/chartist.min.css">
+	
+	<link rel="stylesheet" href="assets/plugin/chart/morris/morris.min.css">
+	<link rel="stylesheet" href="assets/plugin/chart/morris/morris.css">
+
+	<!-- FullCalendar -->
+	<link rel="stylesheet" href="assets/plugin/fullcalendar/fullcalendar.min.css">
+	<link rel="stylesheet" href="assets/plugin/fullcalendar/fullcalendar.print.css" media='print'>
+
+	<!-- Color Picker -->
+	<link rel="stylesheet" href="assets/color-switcher/color-switcher.min.css">
+</head>
+
+<body>
+<div class="main-menu">
+	<header class="header">
+		<a href="dashboard.html" class="logo"><img src="./assets/images/jepc_logo.png"></a>
+		
+		<div class="user">
+			<a href="#" class="avatar"><img src="http://placehold.it/80x80" alt=""><span class="status online"></span></a>
+			<h5 class="name"><a href="profile.html">Emily Stanley</a></h5>
+			<h5 class="position">Administrator</h5>
+			<!-- /.name -->
+			<div class="control-wrap js__drop_down">
+				<i class="fa fa-caret-down js__drop_down_button"></i>
+				<div class="control-list">
+					<div class="control-item"><a href="#"><i class="fa fa-user"></i> Profile</a></div>
+					<div class="control-item"><a href="#"><i class="fa fa-gear"></i> Settings</a></div>
+					<div class="control-item"><a href="index.html"><i class="fa fa-sign-out"></i> Log out</a></div>
+				</div>
+				<!-- /.control-list -->
+			</div>
+			<!-- /.control-wrap -->
+		</div>
+		<!-- /.user -->
+	</header>
+	<!-- /.header -->
+	<div class="content">
+
+		<div class="navigation">
+			<h5 class="title">Navigation</h5>
+			<!-- /.title -->
+			<ul class="menu js__accordion">
+				<li class="current">
+					<a class="waves-effect" href="dashboard.html"><i class="menu-icon fa fa-home"></i><span>Dashboard</span></a>
+				</li>
+				<li>
+					<a class="waves-effect" href="#"><i class="menu-icon fa fa-graduation-cap"></i><span>Schools</span></a>
+				</li>
+				<li>
+					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-folder-open"></i><span>Assets</span><span class="menu-arrow fa fa-angle-down"></span></a>
+					<ul class="sub-menu js__content">
+						<li><a href="#">Add Assets</a></li>
+						<li><a href="#">Asset List</a></li>
+						<li><a href="#">Asset Theft</a></li>
+						<li><a href="#">Asset Replacement</a></li>
+						
+					</ul>
+					<!-- /.sub-menu js__content -->
+				</li>
+				<li>
+					<a class="waves-effect" href="#"><i class="menu-icon fa fa-folder"></i><span>Assets Power Logs</span></a>
+				</li>
+				<li>
+					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-balance-scale"></i><span>Complaint Log</span><span class="menu-arrow fa fa-angle-down"></span></a>
+					<ul class="sub-menu js__content">
+						<li><a href="#">Add Complaint</a></li>
+						<li><a href="#">Complaint List</a></li>
+						
+						
+					</ul>
+					<!-- /.sub-menu js__content -->
+				</li>
+				<li>
+					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-group"></i><span>Students Details</span><span class="menu-arrow fa fa-angle-down"></span></a>
+					<ul class="sub-menu js__content">
+						<li><a href="#">Add Students</a></li>
+						<li><a href="#">Bulk Upload</a></li>
+						<li><a href="#">Students List</a></li>
+						
+						
+					</ul>
+					<!-- /.sub-menu js__content -->
+				</li>
+				<li>
+					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-user"></i><span>Teachers Details</span><span class="menu-arrow fa fa-angle-down"></span></a>
+					<ul class="sub-menu js__content">
+						<li><a href="#">Add Teachers</a></li>
+						<li><a href="#">Bulk Upload</a></li>
+						<li><a href="#">Teachers List</a></li>
+						
+						
+					</ul>
+					<!-- /.sub-menu js__content -->
+				</li>
+				<li>
+					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-calendar-check-o"></i><span>Attendance</span><span class="menu-arrow fa fa-angle-down"></span></a>
+					<ul class="sub-menu js__content">
+						<li><a href="#">ICT Attendance</a></li>
+						<li><a href="#">Substitute ICT Attendance</a></li>
+						<li><a href="#">CC Attendance</a></li>
+						
+						
+					</ul>
+					<!-- /.sub-menu js__content -->
+				</li>
+				<li>
+					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-flask"></i><span>Lab Usages</span><span class="menu-arrow fa fa-angle-down"></span></a>
+					<ul class="sub-menu js__content">
+						<li><a href="#">Theory/ Practical/ Multimedia</a></li>
+						<li><a href="#">MIS/ Office work</a></li>
+						
+						
+					</ul>
+					<!-- /.sub-menu js__content -->
+				</li>
+				
+				<h5 class="title">Reports</h5>
+				<li>
+					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-gear"></i><span>ICT Instructor</span><span class="menu-arrow fa fa-angle-down"></span></a>
+					<ul class="sub-menu js__content">
+						<li><a href="#">School Wise Attendance</a></li>
+						<li><a href="#">District Wise Attendance</a></li>
+						<li><a href="#">Month Wise Attendance</a></li>
+						
+						
+					</ul>
+					<!-- /.sub-menu js__content -->
+				</li>
+				<li>
+					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-gears"></i><span>District Coordinator</span><span class="menu-arrow fa fa-angle-down"></span></a>
+					<ul class="sub-menu js__content">
+						<li><a href="#">School Wise Attendance</a></li>
+						<li><a href="#">Visit Details</a></li>
+						
+						
+					</ul>
+					<!-- /.sub-menu js__content -->
+				</li>
+				<li>
+					<a class="waves-effect" href="#"><i class="menu-icon fa fa-times-circle"></i><span>Thefts</span></a>
+				</li>
+				<li>
+					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-filter"></i><span>Lab Usage</span><span class="menu-arrow fa fa-angle-down"></span></a>
+					<ul class="sub-menu js__content">
+						<li><a href="#">District Wise</a></li>
+						<li><a href="#">School Wise</a></li>
+						<li><a href="#">Class Wise</a></li>
+						<li><a href="#">Lecture Category Wise</a></li>
+						
+						
+					</ul>
+					<!-- /.sub-menu js__content -->
+				</li>
+				<li>
+					<a class="waves-effect" href="#"><i class="menu-icon fa fa-circle"></i><span>Configuration</span></a>
+				</li>
+				
+				
+			<!-- /.menu js__accordion -->
+		</div>
+		<!-- /.navigation -->
+	</div>
+	<!-- /.content -->
+</div>
+<!-- /.main-menu -->
+
+<div class="fixed-navbar">
+	<div class="pull-left">
+		<button type="button" class="menu-mobile-button glyphicon glyphicon-menu-hamburger js__menu_mobile"></button>
+		<h1 class="page-title">Home</h1>
+		<!-- /.page-title -->
+	</div>
+	<!-- /.pull-left -->
+	<div class="pull-right">
+		
+		
+		<a href="index.html" class="ico-item fa fa-power-off" h4 class="page-title"> - Logout</a></h4>
+		
+	</div>
+	<!-- /.pull-right -->
+</div>
+<!-- /.fixed-navbar -->
+
+
+<!-- #color-switcher -->
+
+<div id="wrapper">
+	<div class="main-content">
+		<div class="row small-spacing">
+			
+			<!-- /.col-xs-12 -->
+			<div class="col-lg-3 col-md-6 col-xs-12">
+				<div class="box-content">
+					<h4 class="box-title">Schools</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<div class="content widget-stat">
+						<div class="percent bg-warning"><i class="fa fa-line-chart"></i>83%</div>
+						<!-- /.percent -->
+						<div class="right-content">
+							<h2 class="counter">252</h2>
+							<!-- /.counter -->
+							<p class="text">Schools</p>
+							<!-- /.text -->
+						</div>
+						<!-- /.right-content -->
+						<div class="clear"></div>
+						<!-- /.clear -->
+						<div class="process-bar">
+							<div class="bar-bg bg-warning"></div>
+							<div class="bar js__width bg-warning" data-width="70%"></div>
+							<!-- /.bar js__width bg-success -->
+						</div>
+						<!-- /.process-bar -->
+					</div>
+					<!-- /.content widget-stat -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-3 col-md-6 col-xs-12 -->
+			<div class="col-lg-3 col-md-6 col-xs-12">
+				<div class="box-content">
+					<h4 class="box-title">Number of Students</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<div class="content widget-stat-chart">
+						<div class="c100 p76 small blue js__circle">
+							<span>93%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<!-- /.c100 p58 -->
+						<div class="right-content">
+							<h2 class="counter">72426</h2>
+							<!-- /.counter -->
+							<p class="text">Total</p>
+							<!-- /.text -->
+						</div>
+						<!-- /.right-content -->
+					</div>
+					<!-- /.content -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-3 col-md-6 col-xs-12 -->
+			<div class="col-lg-3 col-md-6 col-xs-12">
+				<div class="box-content">
+					<h4 class="box-title">Number of Assets</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<div class="content widget-stat">
+						<div class="percent bg-danger"><i class="fa fa-line-chart"></i>+79%</div>
+						<!-- /.percent -->
+						<div class="right-content">
+							<h2 class="counter">7989</h2>
+							<!-- /.counter -->
+							<p class="text">Total</p>
+							<!-- /.text -->
+						</div>
+						<!-- /.right-content -->
+						<div class="clear"></div>
+						<!-- /.clear -->
+						<div class="process-bar">
+							<div class="bar-bg bg-danger"></div>
+							<div class="bar js__width bg-danger" data-width="70%"></div>
+							<!-- /.bar js__width bg-success -->
+						</div>
+						<!-- /.process-bar -->
+					</div>
+					<!-- /.content widget-stat -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-3 col-md-6 col-xs-12 -->
+			<div class="col-lg-3 col-md-6 col-xs-12">
+				<div class="box-content">
+					<h4 class="box-title">Number of Complaints</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<div class="content widget-stat-chart">
+						<div class="c100 p94 small green js__circle">
+							<span>14%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<!-- /.c100 p58 -->
+						<div class="right-content">
+							<h2 class="counter">254</h2>
+							<!-- /.counter -->
+							<p class="text">Total</p>
+							<!-- /.text -->
+						</div>
+						<!-- /.right-content -->
+					</div>
+					<!-- /.content -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-3 col-md-6 col-xs-12 -->
+			
+			<h4 class="name">ICT Instructors' Attendance Trend</h4>
+			<div class="col-xs-12">
+				<div class="box-content">
+					
+					
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<div id="smil-animation-index-chartist-chart" class="chartist-chart" style="height: 420px"></div>
+					<!-- /#smil-animation-chartist-chart.chartist-chart -->
+					<h4 class="box-title" style="text-align:center">Number of ICT Instructors' Present over Month</h4>
+				</div>
+				<!-- /.box-content -->
+			</div>
+
+
+            <h4 class="name">District Wise Lab Usage</h4>
+			<div class="col-md-12">
+				<div class="box-content">
+					
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<canvas id="bar-chartjs-chart" class="chartjs-chart" width="480" height="320"></canvas>
+					<!-- /#bar-chartjs-chart.chartjs-chart -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+
+
+
+			<div class="col-xs-12">
+				<div class="box-content">
+					<h4 class="box-title">Lab Usages Graphical Data</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<div class="content">
+						<div id="chart-1" class="js__chart" data-type="donut" width="480" height="420" data-chart="'Type'/'Number' |'MIS Work'/8.9 |'Multimedia'/16.5 | 'Office Work'/28.8 | 'Practical'/24.8 | 'Theory'/21"></div>
+					</div>
+					<!-- /.content -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-4 col-xs-12 -->
+
+
+
+
+
+
+<div class="col-xs-12">
+	<h4 class="name">Top 5 Schools With Highest Lab Usage</h4>
+			<div class="col-lg-3  col-xs-12">
+				<div class="box-content user-info">
+					
+					<div class="left-content">
+						<h4 class="name">KGBV</h4>
+						<!-- /.name -->
+						<p>BHANDRIYA, Garhava</p>
+						
+						<!-- /.text-warning -->
+					</div>
+					<!-- /.right-content -->
+				</div>
+				<!-- /.user-info -->
+			</div>
+			<!-- /.col-lg-3 col-md-6 col-xs-12 -->
+
+
+			<div class="col-lg-3  col-xs-12">
+				<div class="box-content user-info">
+					
+					<div class="left-content">
+						<h4 class="name">KGBV</h4>
+						<!-- /.name -->
+						<p>BHAWANATHPUR</p>
+						
+						<!-- /.text-warning -->
+					</div>
+					<!-- /.right-content -->
+				</div>
+				<!-- /.user-info -->
+			</div>
+			<!-- /.col-lg-3 col-md-6 col-xs-12 -->
+
+
+
+			<div class="col-lg-2  col-xs-12">
+				<div class="box-content user-info">
+					
+					<div class="left-content">
+						<h4 class="name">KGBV</h4>
+						<!-- /.name -->
+						<p>DANDAI</p>
+						
+						<!-- /.text-custom -->
+					</div>
+					<!-- /.right-content -->
+				</div>
+				<!-- /.user-info -->
+			</div>
+			<!-- /.col-lg-3 col-md-6 col-xs-12 -->
+
+
+			<div class="col-lg-2  col-xs-12">
+				<div class="box-content user-info">
+					
+					<div class="left-content">
+						<h4 class="name">KGBV</h4>
+						<!-- /.name -->
+						<p>MANJHIAON</p>
+						
+						<!-- /.text-warning -->
+					</div>
+					<!-- /.right-content -->
+				</div>
+				<!-- /.user-info -->
+			</div>
+			<!-- /.col-lg-3 col-md-6 col-xs-12 -->
+
+
+			<div class="col-lg-2  col-xs-12">
+				<div class="box-content user-info">
+					
+					<div class="left-content">
+						<h4 class="name">KGBV</h4>
+						<!-- /.name -->
+						<p>BISHUNPUR</p>
+						
+						<!-- /.text-custom -->
+					</div>
+					<!-- /.right-content -->
+				</div>
+				<!-- /.user-info -->
+			</div>
+			<!-- /.col-lg-3 col-md-6 col-xs-12 -->
+
+</div>
+
+
+
+			
+			<!-- /.col-xs-12 -->
+			<div class="col-xs-12">
+				<div class="box-content">
+					<h4 class="box-title">Status Of Hardware Inventory</h4>
+					<!-- /.box-title -->
+					<div class="dropdown js__drop_down">
+						<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+						<ul class="sub-menu">
+							<li><a href="#">Product</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else there</a></li>
+							<li class="split"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+						<!-- /.sub-menu -->
+					</div>
+					<!-- /.dropdown js__dropdown -->
+					<div class="table-responsive table-purchases">
+						<table class="table table-striped margin-bottom-10">
+							<thead>
+								<tr>
+									<th style="width:20%;">Item Name</th>
+									<th>Assets Installed</th>
+									<th>Assets Running</th>
+									<th>Assets Not Running</th>
+									<th>Assets Stolen</th>
+									<th>Assets on Standby</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>UPS</td>
+									<td>252</td>
+									<td>242</td>
+									<td>9</td>
+									<td>4</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>Projector</td>
+									<td>252</td>
+									<td>249</td>
+									<td>0</td>
+									<td>4</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>TFT</td>
+									<td>2771</td>
+									<td>2724</td>
+									<td>1</td>
+									<td>63</td>
+									<td>17</td>
+								</tr>
+								<tr>
+									<td>Genset</td>
+									<td>152</td>
+									<td>151</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Switch</td>
+									<td>252</td>
+									<td>252</td>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>CPU</td>
+									<td>254</td>
+									<td>248</td>
+									<td>2</td>
+									<td>4</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Thin Client</td>
+									<td>2544</td>
+									<td>2506</td>
+									<td>3</td>
+									<td>66</td>
+									<td>31</td>
+								</tr>
+								<tr>
+									<td>Site Preparation</td>
+									<td>252</td>
+									<td>252</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Printer</td>
+									<td>252</td>
+									<td>250</td>
+									<td>0</td>
+									<td>3</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Multimedia Content</td>
+									<td>252</td>
+									<td>252</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Furniture</td>
+									<td>252</td>
+									<td>252</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Speaker</td>
+									<td>252</td>
+									<td>249</td>
+									<td>1</td>
+									<td>2</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Stabilizer</td>
+									<td>252</td>
+									<td>251</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- /.table -->
+					</div>
+					<!-- /.table-responsive -->
+				</div>
+				<!-- /.box-content -->
+			</div>
+			<!-- /.col-lg-6 col-xs-12 -->
+		</div>
+		<!-- /.row -->		
+		<footer class="footer">
+			<ul class="list-inline">
+				<li>2022© JEPC</li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Help</a></li>
+			</ul>
+		</footer>
+	</div>
+	<!-- /.main-content -->
+</div><!--/#wrapper -->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="assets/script/html5shiv.min.js"></script>
+		<script src="assets/script/respond.min.js"></script>
+	<![endif]-->
+	<!-- 
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/scripts/jquery.min.js"></script>
+	<script src="assets/scripts/modernizr.min.js"></script>
+	<script src="assets/plugin/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/plugin/nprogress/nprogress.js"></script>
+	<script src="assets/plugin/sweet-alert/sweetalert.min.js"></script>
+	<script src="assets/plugin/waves/waves.min.js"></script>
+	<!-- Full Screen Plugin -->
+	<script src="assets/plugin/fullscreen/jquery.fullscreen-min.js"></script>
+
+	<!-- Percent Circle -->
+	<script src="assets/plugin/percircle/js/percircle.js"></script>
+
+	<!-- Google Chart -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+	<!-- Chartist Chart -->
+	<script src="assets/plugin/chart/chartist/chartist.min.js"></script>
+	<script src="assets/scripts/chart.chartist.init.min.js"></script>
+
+	<!-- chart.js Chart -->
+	<script src="assets/plugin/chart/chartjs/Chart.bundle.min.js"></script>
+	<script src="assets/scripts/chart.chartjs.init.min.js"></script>
+
+	<!-- FullCalendar -->
+	<script src="assets/plugin/moment/moment.js"></script>
+	<script src="assets/plugin/fullcalendar/fullcalendar.min.js"></script>
+	<script src="assets/scripts/fullcalendar.init.js"></script>
+
+	<!-- Morris Chart -->
+	<script src="assets/plugin/chart/morris/morris.min.js"></script>
+	<script src="assets/plugin/chart/morris/raphael-min.js"></script>
+	<script src="assets/scripts/chart.morris.init.min.js"></script>
+
+	<script src="assets/scripts/main.min.js"></script>
+	<script src="assets/color-switcher/color-switcher.min.js"></script>
+</body>
+</html>
